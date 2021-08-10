@@ -1,0 +1,9 @@
+TWITCH_ID=paste_twitch_app_id_here
+TWITCH_NAME=paste_watcher_twitch_channel_here
+TWITCH_OAUTH=paste_twitch_oauth_here
+TWITCH_SECRET=paste_twitch_app_secret_here
+TWITCH_CHANNEL=paste_twitch_channel_to_read_the_chat_from_here
+# =================================================
+RCON_IP=paste_minecraft_ip_here
+RCON_PORT=paste_minecraft_port_here_default_is_25575
+RCON_PASS=paste_minecraft_rcon_password_here

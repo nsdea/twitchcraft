@@ -1,0 +1,102 @@
+slowness: 
+  timeout: 60
+  commands:
+  - effect give SELECTOR minecraft:slowness 10 5
+
+speed: 
+  timeout: 60
+  commands:
+  - effect give SELECTOR minecraft:speed 10 5
+
+poison:
+  timeout: 180
+  commands:
+  - effect give SELECTOR minecraft:poison 10 1
+
+cobweb:
+  timeout: 60
+  commands:
+  - execute at SELECTOR run setblock ~ ~ ~ minecraft:cobweb
+
+creeper:
+  timeout: 240
+  commands:
+  - execute at SELECTOR run summon minecraft:creeper ~ ~50 ~
+cave:
+  timeout: 60
+  commands:
+  - execute at SELECTOR as SELECTOR run playsound minecraft:ambient.cave master @p
+
+tntscare:
+  timeout: 60
+  commands:
+  - execute at SELECTOR as SELECTOR run playsound minecraft:entity.creeper.primed master @p
+
+text:
+  timeout: 20
+  commands:
+  - title SELECTOR actionbar ["",{"text":"[","color":"dark_purple"},{"text":"USER","color":"light_purple"},{"text":"]","color":"dark_purple"},{"text":" AFTER_CMD","color":"aqua"}]
+
+blindness:
+  timeout: 100
+  commands:
+  - effect give SELECTOR minecraft:blindness 10 1
+
+nausea:
+  timeout: 100
+  commands:
+  - effect give SELECTOR minecraft:nausea 10 1
+
+tp:
+  timeout: 240
+  commands:
+  - execute at STREAMER_MINECRAFT_USER run execute at @e[distance=..300,sort=random,limit=1,type=!player] run tp SELECTOR ~ ~ ~
+
+night:
+  timeout: 360
+  commands:
+  - time set midnight
+
+day:
+  timeout: 360
+  commands:
+  - time set day
+
+thunder:
+  timeout: 600
+  commands:
+  - weather thunder
+
+regeneration:
+  timeout: 180
+  commands:
+  - effect give SELECTOR minecraft:regeneration 10 1
+
+dismount:
+  timeout: 60
+  commands:
+  - tp STREAMER_MINECRAFT_USER STREAMER_MINECRAFT_USER
+
+effectclear:
+  timeout: 360
+  commands:
+  - effect clear SELECTOR
+
+lightning:
+  timeout: 120
+  commands:
+  - execute at SELECTOR run summon lightning_bolt ~ ~ ~
+
+spectator:
+  timeout: 120
+  commands:
+  - gamemode spectator SELECTOR
+  - 10
+  - gamemode survival SELECTOR
+
+adventure:
+  timeout: 120
+  commands:
+  - gamemode adventure SELECTOR
+  - 10
+  - gamemode survival SELECTOR
