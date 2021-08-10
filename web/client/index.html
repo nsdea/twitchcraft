@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TwitchCon Bot Dashboard</title>
+    <link rel="stylesheet" href="/css/tailwind.css">
+</head>
+
+<body class="flex flex-col h-screen dark:bg-gray-800">
+    <div class="flex items-center gap-4 p-2 text-lg bg-gray-100 dark:bg-gray-900 dark:text-white">
+        <h1 class="font-bold">TwitchCon</h1>
+        <p id="nav_room"></p>
+        <p id="nav_username" class="ml-auto"></p>
+    </div>
+    <div class="flex flex-1">
+        <div class="w-1/8 bg-gray-100 dark:bg-gray-900 min-w-[200px] dark:text-white">
+            <div class="" id="roomlist_container">
+                <div class="p-2 font-bold bg-gray-200 dark:bg-gray-600">Commands</div>
+                <div class="pr-2" id="commandlist"></div>
+            </div>
+        </div>
+        <div class="flex-1 p-2">
+            <div class="w-full p-2 bg-gray-100 dark:bg-gray-900">
+                <h1 class="mb-2 font-mono text-2xl font-bold text-center text-gray-800 dark:text-white sm:text-4xl md:text-6xl">Commands</h1>
+                <div class="container mx-auto clients">
+                    <div class="mb-5 overflow-y-scroll max-h-80" id="commandlist">
+                        <div class="w-full p-2 mb-2 bg-gray-300 dark:bg-gray-700 dark:text-white gap-4 flex">
+                            <span class="font-bold">!twitchname</span>
+                            <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam inventore illum tempore culpa id natus, facilis accusantium sit expedita dignissimos?</p>
+                            <div class="ml-auto flex">
+                                .p-2.bg-ed-500.dark:bg-red-700.hover:bg-red-600
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
